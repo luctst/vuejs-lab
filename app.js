@@ -1,8 +1,12 @@
-const vm = new Vue({
-    el: "#root",
-    data: {
-        message: 'Bonjour vue'
-    }
+Vue.component("App", {
+    template: `
+    <div>
+        <Header/>
+        <news-list></news-list>
+    </div>
+    `
 });
 
-console.log(vm.$data);
+const vm = new Vue({
+    el: "#root"
+});
